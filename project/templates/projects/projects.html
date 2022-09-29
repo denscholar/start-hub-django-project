@@ -1,7 +1,16 @@
 {% extends "base.html" %}
-
 {% block content %}
-<h1>This is the projects page</h1>
+
+
+<div class="hero-image">
+        <div class="hero-text">
+          <h1>I am John Doe</h1>
+          <p>And I'm a Photographer</p>
+          <div class="box">
+                <input type="search" id="search" placeholder="Search" />
+           </div>
+        </div>
+</div>
 <div>
         {% for project in projects %}
         <h3><a href={% url 'single-project' project.id %}>{{ project.title }}</a></h3>
@@ -9,4 +18,5 @@
 </div>
 
 {% endblock content %}
+
 
