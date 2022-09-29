@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<img src= {{ projObj.featured_image.url }} alt="featured-image">
 <h1>{{projObj.title}}</h1>
 <hr>
 {% for tag in projObj.tags.all %}
